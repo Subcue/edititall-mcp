@@ -6,9 +6,30 @@
     "url": "https://github.com/Subcue/edititall-mcp",
     "source": "github"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "websiteUrl": "https://edititall.com/ai",
   "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@edititall/mcp",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "EDITITALL_URL",
+          "description": "Editor origin (default https://edititall.com)",
+          "isRequired": false
+        },
+        {
+          "name": "CHROME_PATH",
+          "description": "Chrome/Edge/Chromium binary if auto-detect fails",
+          "isRequired": false
+        }
+      ]
+    },
     {
       "registryType": "mcpb",
       "identifier": "https://github.com/Subcue/edititall-mcp/releases/download/v0.2.0/edititall-mcp.mcpb",
