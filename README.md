@@ -6,6 +6,9 @@ Your files never leave the device. The server launches a local headless Chrome, 
 
 Public docs: **[https://edititall.com/ai](https://edititall.com/ai)**
 
+[![crates.io](https://img.shields.io/crates/v/edititall-mcp.svg)](https://crates.io/crates/edititall-mcp)
+[![docs.rs](https://docs.rs/edititall-mcp/badge.svg)](https://docs.rs/edititall-mcp)
+
 ## Requirements
 
 - **Node.js 22+** (built-in `WebSocket`)
@@ -13,9 +16,18 @@ Public docs: **[https://edititall.com/ai](https://edititall.com/ai)**
 
 ## Install
 
+**From crates.io (Rust wrapper):**
+
+```sh
+cargo install edititall-mcp
+claude mcp add edititall -- edititall-mcp
+```
+
+The binary embeds `edititall-mcp.mjs` and execs `node`. Set `NODE` if `node` is not on `PATH`.
+
 **Claude Desktop (one click).** Download [`edititall-mcp.mcpb`](https://edititall.com/edititall-mcp.mcpb) and drag it into Claude Desktop → Settings → Extensions. Claude Desktop ships its own Node runtime.
 
-**Claude Code**
+**Claude Code (Node, no Rust):**
 
 ```sh
 curl -fsSL https://edititall.com/edititall-mcp.mjs -o ~/edititall-mcp.mjs
@@ -35,12 +47,13 @@ claude mcp add edititall -- node /path/to/edititall-mcp/edititall-mcp.mjs
 {
   "mcpServers": {
     "edititall": {
-      "command": "node",
-      "args": ["/path/to/edititall-mcp.mjs"]
+      "command": "edititall-mcp"
     }
   }
 }
 ```
+
+Node-only equivalent: `"command": "node", "args": ["/path/to/edititall-mcp.mjs"]`.
 
 Env:
 

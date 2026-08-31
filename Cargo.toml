@@ -1,0 +1,29 @@
+[package]
+name = "edititall-mcp"
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.77.2"
+description = "MCP server launcher for EditItAll — drive the in-browser photo, vector, PDF, sheet, Word and slides editors locally. Files never leave the machine."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Subcue/edititall-mcp"
+homepage = "https://edititall.com"
+documentation = "https://docs.rs/edititall-mcp"
+authors = ["Subcue AI LLC <aaron@subcueai.com>"]
+keywords = ["mcp", "pdf", "spreadsheet", "edititall", "chrome"]
+categories = ["command-line-utilities"]
+include = [
+  "src/**",
+  "edititall-mcp.mjs",
+  "LICENSE",
+  "README.md",
+  "Cargo.toml",
+]
+
+[[bin]]
+name = "edititall-mcp"
+path = "src/main.rs"
+
+[lib]
+name = "edititall_mcp"
+path = "src/lib.rs"
