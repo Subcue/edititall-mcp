@@ -8,6 +8,7 @@ Your files never leave the device. The server launches a local headless Chrome, 
 
 Public docs: **[https://edititall.com/ai](https://edititall.com/ai)**
 
+[![npm](https://img.shields.io/npm/v/@edititall/mcp.svg)](https://www.npmjs.com/package/@edititall/mcp)
 [![crates.io](https://img.shields.io/crates/v/edititall-mcp.svg)](https://crates.io/crates/edititall-mcp)
 [![docs.rs](https://docs.rs/edititall-mcp/badge.svg)](https://docs.rs/edititall-mcp)
 
@@ -18,6 +19,15 @@ Public docs: **[https://edititall.com/ai](https://edititall.com/ai)**
 
 ## Install
 
+**From npm:**
+
+```sh
+npx -y @edititall/mcp
+# or
+npm i -g @edititall/mcp
+claude mcp add edititall -- edititall-mcp
+```
+
 **From crates.io (Rust wrapper):**
 
 ```sh
@@ -25,7 +35,7 @@ cargo install edititall-mcp
 claude mcp add edititall -- edititall-mcp
 ```
 
-The binary embeds `edititall-mcp.mjs` and execs `node`. Set `NODE` if `node` is not on `PATH`.
+The Rust binary embeds `edititall-mcp.mjs` and execs `node`. Set `NODE` if `node` is not on `PATH`.
 
 **Claude Desktop (one click).** Download [`edititall-mcp.mcpb`](https://edititall.com/edititall-mcp.mcpb) and drag it into Claude Desktop → Settings → Extensions. Claude Desktop ships its own Node runtime.
 
