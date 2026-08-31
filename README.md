@@ -1,5 +1,7 @@
 # EditItAll MCP Server
 
+mcp-name: io.github.Subcue/edititall-mcp
+
 **[EditItAll](https://edititall.com)** is a free, local-first suite of in-browser editors (photo, vector, PDF, spreadsheet, Word, slides, image convert/compress) built by [Subcue AI LLC](https://subcueai.com). This repository is the **[Model Context Protocol](https://modelcontextprotocol.io) server** that lets Claude Code, Claude Desktop, Cursor, and any MCP client **operate those editors on your machine**.
 
 Your files never leave the device. The server launches a local headless Chrome, loads the editors from [edititall.com](https://edititall.com) (or a local `wrangler dev` URL), and drives their official automation hooks. The AI client only sees tool results (cell values, file sizes, screenshots you request).
