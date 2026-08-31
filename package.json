@@ -1,6 +1,9 @@
 {
-  "name": "edititall-mcp",
+  "name": "@edititall/mcp",
   "version": "0.2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "MCP server that drives EditItAll's in-browser editors locally (photo, vector, PDF, sheet, Word, slides, image convert). Files never leave the machine.",
   "type": "module",
   "bin": {
