@@ -11,7 +11,7 @@
   "packages": [
     {
       "registryType": "mcpb",
-      "identifier": "https://edititall.com/edititall-mcp.mcpb",
+      "identifier": "https://github.com/Subcue/edititall-mcp/releases/download/v0.2.0/edititall-mcp.mcpb",
       "version": "0.2.0",
       "fileSha256": "ebeca971cff7dc4bb5eb548565c2ebb4f5532bc65621737af99a7c13f9655b85",
       "transport": {
